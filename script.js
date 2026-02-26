@@ -27,28 +27,28 @@ document.addEventListener('DOMContentLoaded', function () {
       var sectionId = sec.id.replace('section-', '');
       if (sectionId === tabId) {
         sec.classList.remove('hidden');
-        // Re-trigger animation
         sec.style.animation = 'none';
-        // Force reflow
-        void sec.offsetHeight;
+        void sec.offsetHeight; // force reflow
         sec.style.animation = '';
       } else {
         sec.classList.add('hidden');
       }
     });
 
-    // If already expanded, keep expanded; otherwise reset to collapsed
-    if (isExpanded) {
-      contentWrapper.classList.remove('collapsed');
-      contentWrapper.classList.add('expanded');
-      expandOverlay.classList.add('hidden-overlay');
-    } else {
-      contentWrapper.classList.add('collapsed');
-      contentWrapper.classList.remove('expanded');
-      expandOverlay.classList.remove('hidden-overlay');
+    // Safe checks (чтобы не падало на Vercel)
+    if (contentWrapper && expandOverlay) {
+      if (isExpanded) {
+        contentWrapper.classList.remove('collapsed');
+        contentWrapper.classList.add('expanded');
+        expandOverlay.classList.add('hidden-overlay');
+      } else {
+        contentWrapper.classList.add('collapsed');
+        contentWrapper.classList.remove('expanded');
+        expandOverlay.classList.remove('hidden-overlay');
+      }
     }
 
-    // Smooth scroll to top of content card
+    // Smooth scroll
     var contentCard = document.querySelector('.content-card');
     if (contentCard) {
       contentCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -63,13 +63,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // ─── Expand Button ───
-  expandBtn.addEventListener('click', function () {
-    isExpanded = true;
-    contentWrapper.classList.remove('collapsed');
-    contentWrapper.classList.add('expanded');
-    expandOverlay.classList.add('hidden-overlay');
-  });
+  // ─── Expand Button (FIXED) ───
+  if (expandBtn && contentWrapper && expandOverlay) {
+    expandBtn.addEventListener('click', function () {
+      isExpanded = true;
+      contentWrapper.classList.remove('collapsed');
+      contentWrapper.classList.add('expanded');
+      expandOverlay.classList.add('hidden-overlay');
+    });
+  }
 
   // ─── Next Buttons ───
   nextButtons.forEach(function (btn) {
