@@ -99,6 +99,11 @@ body {
   letter-spacing: -0.02em;
 }
 
+@media (max-width: 1124px) {
+  .nav {
+    display: none !important;
+  }
+}
 
 .nav-desktop {
   display: none;
