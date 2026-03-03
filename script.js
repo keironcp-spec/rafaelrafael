@@ -1,85 +1,123 @@
-// OnlyCRM Manual — Main Script
-document.addEventListener('DOMContentLoaded', function () {
-  const TAB_ORDER = ['dashboard', 'dialogs', 'accounts', 'employees', 'notes'];
+// OnlyCRM — Main Script
+document.addEventListener('DOMContentLoaded', function() {
+  // ─── Glass Header on Scroll ───
+  const header = document.getElementById('header');
+  let lastScroll = 0;
 
-  const tabButtons = document.querySelectorAll('.tab-btn');
-  const sections = document.querySelectorAll('.section');
-  const contentWrapper = document.getElementById('content-wrapper');
-  const expandOverlay = document.getElementById('expand-overlay');
-  const expandBtn = document.getElementById('expand-btn');
-  const nextButtons = document.querySelectorAll('.next-btn');
-
-  let isExpanded = false;
-
-  // ─── Switch Tab ───
-  function switchTab(tabId) {
-    // Update buttons
-    tabButtons.forEach(function (btn) {
-      if (btn.getAttribute('data-tab') === tabId) {
-        btn.classList.add('active');
-      } else {
-        btn.classList.remove('active');
-      }
-    });
-
-    // Update sections
-    sections.forEach(function (sec) {
-      var sectionId = sec.id.replace('section-', '');
-      if (sectionId === tabId) {
-        sec.classList.remove('hidden');
-        sec.style.animation = 'none';
-        void sec.offsetHeight; // force reflow
-        sec.style.animation = '';
-      } else {
-        sec.classList.add('hidden');
-      }
-    });
-
-    // Safe checks (чтобы не падало на Vercel)
-    if (contentWrapper && expandOverlay) {
-      if (isExpanded) {
-        contentWrapper.classList.remove('collapsed');
-        contentWrapper.classList.add('expanded');
-        expandOverlay.classList.add('hidden-overlay');
-      } else {
-        contentWrapper.classList.add('collapsed');
-        contentWrapper.classList.remove('expanded');
-        expandOverlay.classList.remove('hidden-overlay');
-      }
+  function handleScroll() {
+    const scrollY = window.scrollY;
+    if (scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
     }
-
-    // Smooth scroll
-    var contentCard = document.querySelector('.content-card');
-    if (contentCard) {
-      contentCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    lastScroll = scrollY;
   }
 
-  // ─── Tab Click Handlers ───
-  tabButtons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var tabId = btn.getAttribute('data-tab');
-      switchTab(tabId);
-    });
-  });
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
 
-  // ─── Expand Button (FIXED) ───
-  if (expandBtn && contentWrapper && expandOverlay) {
-    expandBtn.addEventListener('click', function () {
-      isExpanded = true;
-      contentWrapper.classList.remove('collapsed');
-      contentWrapper.classList.add('expanded');
-      expandOverlay.classList.add('hidden-overlay');
+  // ─── Mobile Menu ───
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', function() {
+      mobileMenuBtn.classList.toggle('active');
+      mobileMenu.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    });
+
+    mobileMenu.querySelectorAll('.mobile-nav-link').forEach(function(link) {
+      link.addEventListener('click', function() {
+        mobileMenuBtn.classList.remove('active');
+        mobileMenu.classList.remove('open');
+        document.body.style.overflow = '';
+      });
     });
   }
 
-  // ─── Next Buttons ───
-  nextButtons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var nextTabId = btn.getAttribute('data-next');
-      if (nextTabId) {
-        switchTab(nextTabId);
+  // ─── Smooth Scroll ───
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     });
   });
+
+  // ─── Counter Animation ───
+  function animateCounter(el) {
+    const target = parseInt(el.getAttribute('data-count'), 10);
+    if (isNaN(target)) return;
+    const duration = 2000;
+    const start = performance.now();
+
+    function update(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.floor(eased * target);
+      el.textContent = current.toLocaleString();
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        el.textContent = target.toLocaleString();
+      }
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  const statNumbers = document.querySelectorAll('.stat-number[data-count]');
+  const counterObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  statNumbers.forEach(function(el) {
+    counterObserver.observe(el);
+  });
+
+  // ─── URL Payment Status Check ───
+  const urlParams = new URLSearchParams(window.location.search);
+  const paymentStatus = urlParams.get('payment');
+  if (paymentStatus === 'success') {
+    showPaymentModal('success');
+    window.history.replaceState({}, '', window.location.pathname);
+  } else if (paymentStatus === 'fail') {
+    showPaymentModal('fail');
+    window.history.replaceState({}, '', window.location.pathname);
+  }
+
+  // ─── THEME LOGO SWITCH (убрали проверку темы) ───
+  const logo = document.getElementById('theme-logo');
+  if (logo) {
+    logo.src = 'logo.png'; // всегда единый логотип
+  }
 });
+
+// ─── Payment Modal Functions ───
+function showPaymentModal(type) {
+  const modal = document.getElementById(type === 'success' ? 'paymentSuccessModal' : 'paymentFailModal');
+  if (modal) {
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closePaymentModal(type) {
+  const modal = document.getElementById(type === 'success' ? 'paymentSuccessModal' : 'paymentFailModal');
+  if (modal) {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
