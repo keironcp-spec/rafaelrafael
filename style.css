@@ -99,6 +99,7 @@ body {
   letter-spacing: -0.02em;
 }
 
+
 .nav-desktop {
   display: none;
   align-items: center;
@@ -110,15 +111,22 @@ body {
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 500;
-  padding: 8px 14px;
+  padding: 8px 10px;
   border-radius: 10px;
   transition: all 0.3s ease;
+position: relative;
+   left: 95px !important;
+
+      
 }
 
 .nav-link:hover {
   color: var(--text);
   background: var(--glass-bg);
 }
+
+
+
 
 .header-actions {
   display: flex;

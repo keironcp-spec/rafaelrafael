@@ -6,7 +6,7 @@
   var langData = {
     ru: {
       nav_features: "Функции",
-      nav_why: "Почему мы",
+      nav_why: "Почему мы?",
       nav_manual: "Руководство",
       nav_pricing: "Тарифы",
       nav_try_free: "7 дней бесплатно",
@@ -118,7 +118,7 @@
       plan2_f5: "✓ Приоритетная поддержка",
       plan2_f6: "✓ Анти-бан механики",
       plan2_btn: "Оформить подписку",
-      plan3_save: "Экономия 25%",
+      plan3_save: "Экономия 33%",
       plan3_name: "Бизнес",
       plan3_period: "/ 3 месяца",
       plan3_f1: "✓ Всё из «Профессионал»",
@@ -141,7 +141,7 @@
     },
     en: {
       nav_features: "Features",
-      nav_why: "Why Us",
+      nav_why: "Why Us?",
       nav_manual: "Guide",
       nav_pricing: "Pricing",
       nav_try_free: "7 Days Free",
@@ -253,7 +253,7 @@
       plan2_f5: "✓ Priority support",
       plan2_f6: "✓ Anti-ban mechanics",
       plan2_btn: "Subscribe",
-      plan3_save: "Save 25%",
+      plan3_save: "Save 33%",
       plan3_name: "Business",
       plan3_period: "/ 3 months",
       plan3_f1: "✓ Everything from Professional",
@@ -276,7 +276,7 @@
     },
     ua: {
       nav_features: "Функції",
-      nav_why: "Чому ми",
+      nav_why: "Чому ми?",
       nav_manual: "Посібник",
       nav_pricing: "Тарифи",
       nav_try_free: "7 днів безкоштовно",
@@ -388,7 +388,7 @@
       plan2_f5: "✓ Пріоритетна підтримка",
       plan2_f6: "✓ Анти-бан механіки",
       plan2_btn: "Оформити підписку",
-      plan3_save: "Економія 25%",
+      plan3_save: "Економія 33%",
       plan3_name: "Бізнес",
       plan3_period: "/ 3 місяці",
       plan3_f1: "✓ Все з «Професіонал»",
