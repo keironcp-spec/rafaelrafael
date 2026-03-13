@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark" data-accent="purple">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Заголовок для Google -->
+  <title>OnlyCRM — Профессиональная CRM для Telegram, Adult и OnlyFans агентств</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="logo.png" type="image/png"> <!-- ═══════════════ Замените photo1.png на ваш нормальный логотип ═══════════════ -->
+
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./animations.css">
+  <link rel="stylesheet" href="./themes.css">
+  <link rel="stylesheet" href="./responsive.css">
+  <link rel="stylesheet" href="./manual.css">
+
+  <!-- SEO мета-теги -->
+  <meta name="description" content="OnlyCRM — CRM система для Telegram, Adult агентств, OnlyFans и cam студий. Управление моделями, операторами, контроль выплат, аналитика, автоматизация процессов.">
+  <meta name="keywords" content="CRM для Telegram, CRM для Adult агентств, CRM для OnlyFans, управление моделями, контроль операторов, контроль выплат, аналитика OnlyFans, автоматизация adult бизнеса, cam студии CRM, CRM для телеграм каналов, CRM для онлайн моделей, CRM для iGaming, OnlyCRM">
+
+  <!-- OG-теги для Telegram / социальных сетей -->
+  <meta property="og:title" content="OnlyCRM — CRM для Telegram и Adult агентств">
+  <meta property="og:description" content="OnlyCRM — CRM система для управления моделями, операторами и аналитикой в Telegram, Adult бизнесе и OnlyFans агентствах. Полный контроль, безопасность, автоматизация.">
+  <meta property="og:image" content="https://yourdomain.com/logo.png">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="header-inner">
+
+    <a href="#" class="logo">
+      <img id="theme-logo" src="photo2.png" alt="OnlyCRM" style="height: 37.5px; width: auto;">
+      <span class="logo-text">OnlyCRM</span>
+    </a>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="nav">
+      <a href="#why" data-i18n="nav_why" class="nav-link">Почему мы?</a>
+      <a href="#manual" data-i18n="nav_manual" class="nav-link">Руководство</a>
+      <a href="#pricing" data-i18n="nav_pricing" class="nav-link">Тарифы</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn active" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="ua">UA</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <div class="theme-controls">
+        <button class="theme-toggle" id="themeToggle" title="Сменить тему">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg> <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+
+      <a href="https://onlycrm.tech/auth/register" class="btn-try-free">
+        7 дней бесплатно
+      </a>
+
+      <a href="https://onlycrm.tech/login" class="btn-login">
+        Войти
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </div>
+</header>
+
+
+<section class="hero" id="hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-content anim-fade-up">
+
+      <h1 class="hero-title" data-i18n="hero_title">Управляйте Telegram-аккаунтами<br><span class="gradient-text">на новом уровне</span></h1>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">Профессиональная CRM-система для adult-агентств, гемблинг и iGaming индустрии, разработанная для digital-команд с повышенными требованиями к безопасности, аналитике и скорости работы</p>
+      <div class="hero-buttons">
+        <a href="https://onlycrm.tech/auth/register" class="btn-primary btn-lg" data-i18n="hero_cta">Получить доступ</a>
+        <a href="https://onlycrm.tech/auth/register" class="btn-glass btn-lg" data-i18n="hero_trial">Попробовать 7 дней бесплатно</a>
+      </div>
+    </div>
+    <div class="hero-image anim-fade-up anim-delay-2">
+      <div class="hero-image-frame glass-panel">
+        <img src="img/img1.png" alt="OnlyCRM Dashboard" loading="eager">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section features" id="features">
+  <div class="container">
+    <div class="section-header anim-fade-up">
+      <span class="section-badge" data-i18n="features_badge">Возможности</span>
+      <h2 class="section-title" data-i18n="features_title">Всё для управления Telegram</h2>
+      <p class="section-desc" data-i18n="features_desc">Полный набор инструментов для профессиональной работы с Telegram-аккаунтами из единого интерфейса.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card glass-panel anim-fade-up">
+        <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3 class="feature-title" data-i18n="f1_title">Управление аккаунтами</h3>
+        <p class="feature-desc" data-i18n="f1_desc">Подключайте десятки Telegram-аккаунтов и управляйте ими из единого окна.</p>
+      </div>
+      <div class="feature-card glass-panel anim-fade-up anim-delay-1">
+        <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3 class="feature-title" data-i18n="f2_title">Единое окно переписки</h3>
+        <p class="feature-desc" data-i18n="f2_desc">Все диалоги одного аккаунта в одном удобном интерфейсе</p>
+      </div>
+      <div class="feature-card glass-panel anim-fade-up">
+        <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></div>
+        <h3 class="feature-title" data-i18n="f4_title">Аналитика</h3>
+        <p class="feature-desc" data-i18n="f4_desc">Детальная статистика по доходам, сообщениям и активности команды.</p>
+      </div>
+      <div class="feature-card glass-panel anim-fade-up anim-delay-1">
+        <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h3 class="feature-title" data-i18n="f5_title">Защита данных</h3>
+        <p class="feature-desc" data-i18n="f5_desc">AES-256 шифрование, безопасное хранение сессий и двухфакторная аутентификация.</p>
+      </div>
+      <div class="feature-card glass-panel anim-fade-up">
+        <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6"/><path d="M23 11h-6"/></svg></div>
+        <h3 class="feature-title" data-i18n="f7_title">Система ролей</h3>
+        <p class="feature-desc" data-i18n="f7_desc">Владелец, менеджер, оператор — гибкое распределение прав доступа.</p>
+      </div>
+      <div class="feature-card glass-panel anim-fade-up anim-delay-1">
+        <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3 class="feature-title" data-i18n="f8_title">Мониторинг операторов</h3>
+        <p class="feature-desc" data-i18n="f8_desc">Отслеживайте активность каждого сотрудника в реальном времени.</p>
+      </div>
+      <div class="feature-card glass-panel anim-fade-up anim-delay-2">
+        <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3 class="feature-title" data-i18n="f9_title">Анти-бан механики</h3>
+        <p class="feature-desc" data-i18n="f9_desc">Умные алгоритмы защиты аккаунтов от блокировок Telegram.</p>
+      </div>
+      <div class="feature-card glass-panel anim-fade-up">
+        <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <h3 class="feature-title" data-i18n="f10_title">Высокая производительность</h3>
+        <p class="feature-desc" data-i18n="f10_desc">Оптимизирована для работы с тысячами диалогов без задержек.</p>
+      </div>
+      <div class="feature-card glass-panel anim-fade-up anim-delay-2">
+        <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <h3 class="feature-title" data-i18n="f12_title">Финансовый трекинг</h3>
+        <p class="feature-desc" data-i18n="f12_desc">Учёт доходов по каждому контакту с детальной аналитикой.</p>
+  </div>
+</section>
+
+<section class="section who-needs" id="who">
+  <div class="container">
+    <div class="section-header anim-fade-up">
+      <span class="section-badge" data-i18n="who_badge">Аудитория</span>
+      <h2 class="section-title" data-i18n="who_title">Кому нужен OnlyCRM и почему?</h2>
+      <p class="section-desc" data-i18n="who_desc">OnlyCRM создан для команд, которым нужна надёжная и безопасная CRM для работы с Telegram.</p>
+    </div>
+    <div class="who-grid">
+      <div class="who-card glass-panel anim-fade-up">
+        <div class="who-icon" style="font-size: 60px; display: flex; align-items: center; justify-content: center;">
+          🔞
+        </div>
+        <h3 class="who-card-title" data-i18n="who1_title">Гемблинг агентства</h3>
+        <p class="who-card-desc" data-i18n="who1_desc">Управление большим количеством аккаунтов и клиентов с полным контролем финансов и коммуникаций.</p>
+      </div>
+      <div class="who-card glass-panel anim-fade-up anim-delay-1">
+        <div class="who-icon" style="font-size: 60px; display: flex; align-items: center; justify-content: center;">
+          🎰
+        </div>
+        <h3 class="who-card-title" data-i18n="who2_title">iGambling проекты</h3>
+        <p class="who-card-desc" data-i18n="who2_desc">Масштабирование операций с автоматизацией рассылок и аналитикой конверсий.</p>
+      </div>
+      <div class="who-card glass-panel anim-fade-up anim-delay-2">
+        <div class="who-icon" style="font-size: 60px; display: flex; align-items: center; justify-content: center;">
+          🚀
+        </div>
+        <h3 class="who-card-title" data-i18n="who3_title">Adult-ниши</h3>
+        <p class="who-card-desc" data-i18n="who3_desc">Безопасная работа с контактами, защита данных и анонимность на высшем уровне.</p>
+      </div>
+      <div class="who-card glass-panel anim-fade-up anim-delay-1">
+        <div class="who-icon" style="font-size: 60px; display: flex; align-items: center; justify-content: center;">
+          ⚡
+        </div>
+        <h3 class="who-card-title" data-i18n="who4_title">Digital-команды</h3>
+        <p class="who-card-desc" data-i18n="who4_desc">Координация работы операторов, мониторинг активности и система ролей для эффективной работы.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section why-choose" id="why">
+  <div class="container">
+    <div class="section-header anim-fade-up">
+      <span class="section-badge" data-i18n="why_badge">Преимущества</span>
+      <h2 class="section-title" data-i18n="why_title">Почему стоит выбрать OnlyCRM</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item anim-fade-up">
+        <div class="why-item-img glass-panel">
+          <img src="img/security.jpg" alt="Security" loading="lazy">
+        </div>
+        <div class="why-item-content">
+          <h3 data-i18n="why1_title">Безопасность на первом месте</h3>
+          <p data-i18n="why1_desc">AES-256 шифрование, одноразовые токены доступа, защита от brute force и серверная верификация каждого действия. Ваши данные под надёжной защитой.</p>
+        </div>
+      </div>
+      <div class="why-item reverse anim-fade-up">
+        <div class="why-item-img glass-panel">
+          <img src="img/Analytics.jpg" alt="Analytics" loading="lazy">
+        </div>
+        <div class="why-item-content">
+          <h3 data-i18n="why2_title">Глубокая аналитика</h3>
+          <p data-i18n="why2_desc">Интерактивные графики доходов, статистика сообщений, мониторинг активности команды — все данные в реальном времени для принятия решений.</p>
+        </div>
+      </div>
+      <div class="why-item anim-fade-up">
+        <div class="why-item-img glass-panel">
+          <img src="img/multi.webp" alt="Telegram Management" loading="lazy">
+        </div>
+        <div class="why-item-content">
+          <h3 data-i18n="why3_title">Мультиаккаунт без ограничений</h3>
+          <p data-i18n="why3_desc">Подключайте неограниченное количество Telegram-аккаунтов. Переключайтесь между ними мгновенно. Все диалоги в одном месте.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section tasks-solved" id="tasks">
+  <div class="container">
+    <div class="section-header anim-fade-up">
+      <span class="section-badge" data-i18n="tasks_badge">Решения</span>
+      <h2 class="section-title" data-i18n="tasks_title">Какие задачи решает OnlyCRM?</h2>
+    </div>
+    <div class="tasks-grid">
+      <div class="task-card glass-panel anim-fade-up">
+        <div class="task-num">01</div>
+        <h3 data-i18n="task1_title">Хаос в переписках</h3>
+        <p data-i18n="task1_desc">Объединяет все диалоги из разных аккаунтов в единый интерфейс с удобной навигацией и поиском.</p>
+      </div>
+      <div class="task-card glass-panel anim-fade-up anim-delay-1">
+        <div class="task-num">02</div>
+        <h3 data-i18n="task2_title">Потеря клиентов</h3>
+        <p data-i18n="task2_desc">Карточки контактов, теги, заметки и финансовая история — ни один клиент не будет забыт.</p>
+      </div>
+      <div class="task-card glass-panel anim-fade-up anim-delay-2">
+        <div class="task-num">03</div>
+        <h3 data-i18n="task3_title">Контроль команды</h3>
+        <p data-i18n="task3_desc">Мониторинг активности операторов, система ролей и распределение аккаунтов между сотрудниками.</p>
+      </div>
+      <div class="task-card glass-panel anim-fade-up">
+        <div class="task-num">04</div>
+        <h3 data-i18n="task4_title">Учёт финансов</h3>
+        <p data-i18n="task4_desc">Трекинг доходов по каждому контакту с графиками и аналитикой за любой период.</p>
+      </div>
+      <div class="task-card glass-panel anim-fade-up anim-delay-1">
+        <div class="task-num">05</div>
+        <h3 data-i18n="task5_title">Безопасность аккаунтов</h3>
+        <p data-i18n="task5_desc">Анти-бан механики, прокси для каждого аккаунта и шифрование всех данных.</p>
+      </div>
+      <div class="task-card glass-panel anim-fade-up anim-delay-2">
+        <div class="task-num">06</div>
+        <h3 data-i18n="task6_title">Масштабирование</h3>
+        <p data-i18n="task6_desc">От 1 до 100+ аккаунтов — система растёт вместе с вашим бизнесом без потери производительности.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section stats" id="stats">
+  <div class="container">
+    <div class="section-header anim-fade-up">
+      <span class="section-badge" data-i18n="stats_badge">Цифры</span>
+      <h2 class="section-title" data-i18n="stats_title">Ключевые показатели CRM в цифрах</h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card glass-panel anim-fade-up">
+        <div class="stat-number" data-count="1500">0</div>
+        <div class="stat-suffix">+</div>
+        <div class="stat-label" data-i18n="stat1">Активных пользователей</div>
+      </div>
+      <div class="stat-card glass-panel anim-fade-up anim-delay-1">
+        <div class="stat-number" data-count="10">0</div>
+        <div class="stat-suffix">M+</div>
+        <div class="stat-label" data-i18n="stat2">Сообщений обработано</div>
+      </div>
+      <div class="stat-card glass-panel anim-fade-up anim-delay-2">
+        <div class="stat-number" data-count="99">0</div>
+        <div class="stat-suffix">.9%</div>
+        <div class="stat-label" data-i18n="stat3">Uptime сервиса</div>
+      </div>
+      <div class="stat-card glass-panel anim-fade-up anim-delay-1">
+        <div class="stat-number" data-count="450">0</div>
+        <div class="stat-suffix">+</div>
+        <div class="stat-label" data-i18n="stat4">Команд используют</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section manual-section" id="manual">
+  <div class="container">
+    <div class="section-header anim-fade-up">
+      <span class="section-badge" data-i18n="manual_badge">Руководство</span>
+      <h2 class="section-title" data-i18n="manual_title">Полное руководство по OnlyCRM</h2>
+      <p class="section-desc" data-i18n="manual_desc">Профессиональная CRM-система для управления Telegram-диалогами, контактами и командой. Изучите все возможности платформы.</p>
+    </div>
+
+
+    <div class="manual-tabs glass-panel anim-fade-up">
+      <div class="manual-tab-list">
+        <button class="manual-tab-btn active" data-tab="dashboard">
+          <span class="manual-tab-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+          <div class="manual-tab-text">
+            <span class="manual-tab-label" data-i18n="mtab_dashboard">Дашборд</span>
+            <span class="manual-tab-sub" data-i18n="mtab_dashboard_sub">Обзор и статистика</span>
+          </div>
+        </button>
+        <button class="manual-tab-btn" data-tab="dialogs">
+          <span class="manual-tab-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          <div class="manual-tab-text">
+            <span class="manual-tab-label" data-i18n="mtab_dialogs">Диалоги</span>
+            <span class="manual-tab-sub" data-i18n="mtab_dialogs_sub">Чаты и сообщения</span>
+          </div>
+        </button>
+        <button class="manual-tab-btn" data-tab="accounts">
+          <span class="manual-tab-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></span>
+          <div class="manual-tab-text">
+            <span class="manual-tab-label" data-i18n="mtab_accounts">Аккаунты</span>
+            <span class="manual-tab-sub" data-i18n="mtab_accounts_sub">Telegram аккаунты</span>
+          </div>
+        </button>
+        <button class="manual-tab-btn" data-tab="employees">
+          <span class="manual-tab-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <div class="manual-tab-text">
+            <span class="manual-tab-label" data-i18n="mtab_employees">Сотрудники</span>
+            <span class="manual-tab-sub" data-i18n="mtab_employees_sub">Команда и доступ</span>
+          </div>
+        </button>
+        <button class="manual-tab-btn" data-tab="notes">
+          <span class="manual-tab-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
+          <div class="manual-tab-text">
+            <span class="manual-tab-label" data-i18n="mtab_notes">Заметки</span>
+            <span class="manual-tab-sub" data-i18n="mtab_notes_sub">Личные заметки</span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+   
+    <div class="manual-content glass-panel anim-fade-up">
+      <div id="manual-content-wrapper" class="manual-content-wrapper collapsed">
+
+
+        <div class="manual-sec" id="msec-dashboard">
+          <h2 class="manual-heading">Дашборд — Центр управления</h2>
+          <p class="manual-body">Дашборд — это главная панель управления OnlyCRM, которая предоставляет полный обзор вашей деятельности в реальном времени. Это первый экран, который вы видите при входе в систему. Дашборд объединяет всю ключевую информацию в одном месте: финансовую статистику, аналитику сообщений, структуру диалогов и активность вашей команды.</p>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Панель приветствия и навигация</h3>
+          <p class="manual-body">В верхней части дашборда расположена панель приветствия, которая отображает ваше имя и текущую дату с точным временем. Время обновляется в реальном времени каждую секунду. Слева находится боковое меню навигации с иконками разделов: Дашборд, Диалоги, Аккаунты, Сотрудники и Заметки.</p>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/img1.png" alt="Панель приветствия" loading="lazy"></div><figcaption>Главный экран дашборда с приветствием, навигацией и временем</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Финансовая статистика</h3>
+          <p class="manual-body">Блок финансовой статистики предоставляет мгновенный обзор ваших доходов. Карточки с ключевыми метриками:</p>
+          <ul class="manual-bullet-list">
+            <li><span class="manual-bullet">•</span><span>«Доход сегодня» — суммарный доход за текущий день, обновляется в реальном времени.</span></li>
+            <li><span class="manual-bullet">•</span><span>«За месяц» — общая сумма дохода за текущий календарный месяц.</span></li>
+            <li><span class="manual-bullet">•</span><span>«Новые сегодня» — количество новых контактов за текущий день.</span></li>
+            <li><span class="manual-bullet">•</span><span>«Исходящие / Входящие» — статистика сообщений за сегодня.</span></li>
+            <li><span class="manual-bullet">•</span><span>«Контакты» — общее количество контактов в базе данных.</span></li>
+          </ul>
+          <p class="manual-body">Каждая карточка имеет цветовую индикацию: зелёный — рост, красный — снижение.</p>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/moneycall.png" alt="Финансовая статистика" loading="lazy"></div><figcaption>Карточки с ключевыми финансовыми метриками</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Тренды и визуальная аналитика</h3>
+          <p class="manual-body">Интерактивные графики визуализируют динамику доходов и сообщений. Доступны периоды: 7 дней, 30 дней и произвольный.</p>
+          <div class="manual-tip"><span class="manual-tip-label">💡 Совет: </span>Регулярно анализируйте тренды за 30 дней для выявления сезонных закономерностей.</div>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/sms-structur.png" alt="Тренды" loading="lazy"></div><figcaption>Интерактивные графики доходов и сообщений</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Структура диалогов</h3>
+          <p class="manual-body">Виджет показывает распределение чатов по типам: Пользователи, Группы, Каналы и Непрочитанные.</p>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/dialogs.png" alt="Структура диалогов" loading="lazy"></div><figcaption>Распределение диалогов по типам</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Активность команды</h3>
+          <p class="manual-body">Блок показывает в реальном времени сколько сотрудников онлайн, их роли и текущий статус.</p>
+          <div class="manual-warning"><span class="manual-warning-label">⚠️ Важно: </span>Статус «онлайн» обновляется с задержкой до 30 секунд.</div>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/chatteers.png" alt="Активность команды" loading="lazy"></div><figcaption>Мониторинг онлайн-статуса сотрудников</figcaption></figure>
+
+          <div class="manual-next-row"><button class="manual-next-btn" data-next="dialogs">Перейти далее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></button></div>
+        </div>
+
+    
+        <div class="manual-sec hidden" id="msec-dialogs">
+          <h2 class="manual-heading">Диалоги — Центр коммуникации</h2>
+          <p class="manual-body">Раздел «Диалоги» — это сердце OnlyCRM. Интерфейс разделён на три зоны: список диалогов слева, окно чата в центре и панель информации справа.</p>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Список диалогов и фильтрация</h3>
+          <p class="manual-body">Левая панель содержит полный список диалогов, отсортированных по времени последнего сообщения. В верхней части — переключатель аккаунтов для мгновенного переключения между Telegram-аккаунтами.</p>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/chats.png" alt="Список диалогов" loading="lazy"></div><figcaption>Левая панель со списком диалогов</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Интерфейс переписки</h3>
+          <p class="manual-body">Полноценное окно чата с полной историей переписки. Поддерживает все типы контента Telegram: текст, фото, видео, голосовые, стикеры и документы.</p>
+          <div class="manual-tip"><span class="manual-tip-label">💡 Совет: </span>Используйте Ctrl+F для поиска сообщения в истории переписки.</div>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/inter-chats.png" alt="Интерфейс переписки" loading="lazy"></div><figcaption>Центральная зона чата с историей сообщений</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Карточка контакта</h3>
+          <p class="manual-body">Вкладка «Info» позволяет заполнить подробную карточку: имя, фамилия, страна, город, возраст, дата рождения, теги и примечания.</p>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/info-chat.png" alt="Карточка контакта" loading="lazy"></div><figcaption>Вкладка Info с полями карточки контакта</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Финансовый трекинг</h3>
+          <p class="manual-body">Вкладка «Finance» — отслеживание доходов от каждого контакта. Сводка по четырём периодам и форма добавления транзакций.</p>
+          <div class="manual-tip"><span class="manual-tip-label">💡 Совет: </span>Всегда добавляйте комментарии к транзакциям для бухгалтерского учёта.</div>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/money-info-chat.png" alt="Финансовый трекинг" loading="lazy"></div><figcaption>Вкладка Finance с историей транзакций</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Заметки и медиа</h3>
+          <p class="manual-body">Вкладка «Notes» хранит персональные заметки по контакту. «Attachments» собирает все медиафайлы и документы из переписки.</p>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/info-chat-zametki.png" alt="Заметки" loading="lazy"></div><figcaption>Персональные заметки контакта</figcaption></figure>
+          
+
+          <div class="manual-next-row"><button class="manual-next-btn" data-next="accounts">Перейти далее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></button></div>
+        </div>
+
+     
+        <div class="manual-sec hidden" id="msec-accounts">
+          <h2 class="manual-heading">Аккаунты — Управление Telegram</h2>
+          <p class="manual-body">Подключение и управление несколькими Telegram-аккаунтами одновременно из единого интерфейса.</p>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Панель управления аккаунтами</h3>
+          <p class="manual-body">Таблица всех подключённых аккаунтов: имя, номер телефона, статус подключения, дата активности и количество диалогов.</p>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/accounts.png" alt="Панель аккаунтов" loading="lazy"></div><figcaption>Таблица подключённых аккаунтов</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Добавление по номеру телефона</h3>
+          <ol class="manual-num-list">
+            <li><span class="manual-num">1</span><span>Нажмите «Добавить аккаунт»</span></li>
+            <li><span class="manual-num">2</span><span>Выберите вкладку «Телефон + Код»</span></li>
+            <li><span class="manual-num">3</span><span>Введите номер в международном формате</span></li>
+            <li><span class="manual-num">4</span><span>Получите и введите код подтверждения</span></li>
+            <li><span class="manual-num">5</span><span>При наличии 2FA — введите пароль</span></li>
+          </ol>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/conect-acc.png" alt="Авторизация по телефону" loading="lazy"></div><figcaption>Форма ввода номера телефона</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Добавление по QR-коду</h3>
+          <p class="manual-body">Быстрая авторизация через QR-код без ввода номера. Откройте Telegram → Настройки → Устройства → Подключить устройство.</p>
+          <div class="manual-warning"><span class="manual-warning-label">⚠️ Важно: </span>QR-код одноразовый. Не делайте скриншоты и не передавайте третьим лицам.</div>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/qrcode-conect-account.png" alt="QR-код" loading="lazy"></div><figcaption>QR-код для сканирования</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Безопасность</h3>
+          <div class="manual-plus-list">
+            <div class="manual-plus-item"><span class="manual-plus-badge">+</span><div><span class="manual-plus-title">Официальный Telegram API</span><p class="manual-plus-desc">Стандартные механизмы безопасности без неофициальных методов.</p></div></div>
+            <div class="manual-plus-item"><span class="manual-plus-badge">+</span><div><span class="manual-plus-title">AES-256 шифрование</span><p class="manual-plus-desc">Все токены сессий хранятся в зашифрованном виде.</p></div></div>
+            <div class="manual-plus-item"><span class="manual-plus-badge">+</span><div><span class="manual-plus-title">Поддержка 2FA и прокси</span><p class="manual-plus-desc">SOCKS5/HTTP прокси для каждого аккаунта отдельно.</p></div></div>
+          </div>
+
+          <div class="manual-next-row"><button class="manual-next-btn" data-next="employees">Перейти далее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></button></div>
+        </div>
+
+      
+        <div class="manual-sec hidden" id="msec-employees">
+          <h2 class="manual-heading">Сотрудники — Управление командой</h2>
+          <p class="manual-body">Добавление сотрудников, назначение ролей и аккаунтов, отслеживание активности и управление правами доступа.</p>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Обзор команды и роли</h3>
+          <ul class="manual-bullet-list">
+            <li><span class="manual-bullet">•</span><span>«Владелец» — полный доступ ко всем функциям системы.</span></li>
+            <li><span class="manual-bullet">•</span><span>«ТимЛид» — расширенный доступ к диалогам назначенных аккаунтов.</span></li>
+            <li><span class="manual-bullet">•</span><span>«Чаттер» — базовый доступ только к назначенным диалогам.</span></li>
+          </ul>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/sotrudiki.png" alt="Обзор команды" loading="lazy"></div><figcaption>Список сотрудников с ролями</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Система приглашений</h3>
+          <p class="manual-body">Уникальная одноразовая ссылка-приглашение для каждого нового сотрудника. После регистрации — роль «Оператор» по умолчанию.</p>
+          <div class="manual-tip"><span class="manual-tip-label">💡 Совет: </span>Генерируйте отдельную ссылку для каждого сотрудника.</div>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/links.png" alt="Приглашения" loading="lazy"></div><figcaption>Генерация ссылки-приглашения</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Мониторинг активности</h3>
+          <p class="manual-body">Детальная статистика: сообщения, обработанные диалоги, время онлайн, транзакции и заполненные карточки.</p>
+          <div class="manual-warning"><span class="manual-warning-label">⚠️ Важно: </span>Данные обновляются с задержкой до 5 минут.</div>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/sotrudnik-check.png" alt="Мониторинг" loading="lazy"></div><figcaption>Графики активности сотрудников</figcaption></figure>
+
+          <div class="manual-next-row"><button class="manual-next-btn" data-next="notes">Перейти далее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg></button></div>
+        </div>
+
+        
+        <div class="manual-sec hidden" id="msec-notes">
+          <h2 class="manual-heading">Заметки — Персональное пространство</h2>
+          <p class="manual-body">Личное рабочее пространство для хранения планов, идей, шаблонов сообщений, инструкций и списков задач.</p>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Рабочее пространство</h3>
+          <p class="manual-body">Все заметки в удобном списке с заголовком, превью, датой создания и редактирования. Поиск по содержимому.</p>
+          <ul class="manual-bullet-list">
+            <li><span class="manual-bullet">•</span><span>Шаблоны приветственных сообщений для новых клиентов</span></li>
+            <li><span class="manual-bullet">•</span><span>Прайс-лист услуг для быстрого доступа</span></li>
+            <li><span class="manual-bullet">•</span><span>Ежедневный план работы с отметками выполнения</span></li>
+            <li><span class="manual-bullet">•</span><span>FAQ с готовыми ответами на типичные вопросы</span></li>
+          </ul>
+          <figure class="manual-shot"><div class="manual-shot-frame"> <img src="img/zametki.png" alt="Заметки" loading="lazy"></div><figcaption>Список заметок с превью</figcaption></figure>
+
+          <h3 class="manual-subheading"><span class="manual-accent-bar"></span>Создание и управление</h3>
+          <p class="manual-body">Автосохранение при каждом изменении. Базовое форматирование. Количество заметок не ограничено.</p>
+          <div class="manual-tip"><span class="manual-tip-label">💡 Совет: </span>Создайте заметку-шаблон с типичными ответами для единообразия коммуникации.</div>
+          <figure class="manual-shot"><div class="manual-shot-frame"><img src="img/create-zametki.png" alt="Создание заметок" loading="lazy"></div><figcaption>Интерфейс создания заметки</figcaption></figure>
+        </div>
+
+      </div>
+
+    
+      <div id="manual-expand-overlay" class="manual-expand-overlay">
+        <div class="manual-expand-gradient"></div>
+        <div class="manual-expand-btn-container">
+          <button id="manual-expand-btn" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="M19 12l-7 7-7-7"/></svg>
+            <span data-i18n="manual_read_more">Читать полностью</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section pricing" id="pricing">
+  <div class="container">
+    <div class="section-header anim-fade-up">
+      <span class="section-badge" data-i18n="pricing_badge">Тарифы</span>
+      <h2 class="section-title" data-i18n="pricing_title">Выберите свой план</h2>
+      <p class="section-desc" data-i18n="pricing_desc">Начните бесплатно и масштабируйтесь по мере роста вашего бизнеса.</p>
+    </div>
+    <div class="pricing-grid">
+     
+      <div class="pricing-card glass-panel anim-fade-up">
+        <div class="pricing-header">
+          <h3 class="pricing-name" data-i18n="plan1_name">Старт</h3>
+          <div class="pricing-price">
+            <span class="pricing-amount" data-i18n="plan1_price">Бесплатно</span>
+          </div>
+          <p class="pricing-period" data-i18n="plan1_period">10 дней</p>
+        </div>
+        <ul class="pricing-features">
+          <li data-i18n="plan1_f1">✓ Полный доступ к CRM</li>
+          <li data-i18n="plan1_f2">✓ До 3 Telegram-аккаунтов</li>
+          <li data-i18n="plan1_f3">✓ Базовая аналитика</li>
+       
+          <li data-i18n="plan1_f5">✓ Техническая поддержка</li>
+        </ul>
+        <a href="https://onlycrm.tech/auth/register" class="btn-primary btn-full" data-i18n="plan1_btn">Попробовать бесплатно</a>
+      </div>
+      
+      <div class="pricing-card glass-panel featured anim-fade-up anim-delay-1">
+        <div class="pricing-popular" data-i18n="plan_popular">Популярный</div>
+        <div class="pricing-header">
+          <h3 class="pricing-name" data-i18n="plan2_name">Обычный</h3>
+          <div class="pricing-price">
+            <span class="pricing-currency">$</span>
+            <span class="pricing-amount">25</span>
+          </div>
+          <p class="pricing-period" data-i18n="plan2_period">/ 30 дней</p>
+        </div>
+
+        <a href="https://onlycrm.tech/auth/register" class="btn-primary btn-full" data-i18n="plan2_btn">Оформить подписку</a>
+      </div>
+    
+      <div class="pricing-card glass-panel anim-fade-up anim-delay-2">
+        <div class="pricing-save" data-i18n="plan3_save">Экономия 25%</div>
+        <div class="pricing-header">
+          <h3 class="pricing-name" data-i18n="plan3_name">Бизнес</h3>
+          <div class="pricing-price">
+            <span class="pricing-currency">$</span>
+            <span class="pricing-amount">56</span>
+          </div>
+          <p class="pricing-period" data-i18n="plan3_period">/ 3 месяца</p>
+        </div>
+
+        <a href="https://onlycrm.tech/auth/register" class="btn-primary btn-full" data-i18n="plan3_btn">Оформить подписку</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section social" id="social">
+  <div class="container">
+    <div class="section-header anim-fade-up">
+      <span class="section-badge" data-i18n="social_badge">Сообщество</span>
+      <h2 class="section-title" data-i18n="social_title">Узнайте больше об OnlyCRM!</h2>
+      <p class="section-desc" data-i18n="social_desc">Присоединяйтесь к нашему сообществу и будьте в курсе всех обновлений и новостей.</p>
+    </div>
+    <div class="social-grid" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+
+    
+      <a href="https://t.me/Only_CRM" class="social-card glass-panel anim-fade-up" target="_blank" rel="noopener">
+        <div class="social-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+          </svg>
+        </div>
+        <span class="social-name">Telegram</span>
+        <span class="social-handle">@Only_CRM</span>
+      </a>
+
+
+      <a href="https://www.instagram.com/Only.CRM/" class="social-card glass-panel anim-fade-up anim-delay-1" target="_blank" rel="noopener">
+        <div class="social-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.335 3.608 1.31.975.975 1.248 2.242 1.31 3.608.058 1.266.07 1.645.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.335 2.633-1.31 3.608-.975.975-2.242 1.248-3.608 1.31-1.266.058-1.645.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.335-3.608-1.31-.975-.975-1.248-2.242-1.31-3.608-.058-1.266-.07-1.645-.07-4.85s.012-3.584.07-4.85c.062-1.366.335-2.633 1.31-3.608.975-.975 2.242-1.248 3.608-1.31 1.266-.058 1.645-.07 4.85-.07zm0-2.163C8.741 0 8.332.013 7.052.072 5.766.131 4.66.34 3.755.897 2.813 1.477 2.01 2.28 1.43 3.222.873 4.127.664 5.233.605 6.519.546 7.799.533 8.208.533 12c0 3.792.013 4.201.072 5.481.059 1.286.268 2.392.825 3.297.58.942 1.383 1.745 2.325 2.325.905.557 2.011.766 3.297.825 1.28.059 1.689.072 5.481.072s4.201-.013 5.481-.072c1.286-.059 2.392-.268 3.297-.825.942-.58 1.745-1.383 2.325-2.325.557-.905.766-2.011.825-3.297.059-1.28.072-1.689.072-5.481s-.013-4.201-.072-5.481c-.059-1.286-.268-2.392-.825-3.297-.58-.942-1.383-1.745-2.325-2.325C19.924.34 18.818.131 17.532.072 16.252.013 15.843 0 12 0z"/>
+            <path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998z"/>
+            <circle cx="18.406" cy="5.594" r="1.44"/>
+          </svg>
+        </div>
+        <span class="social-name">Instagram</span>
+        <span class="social-handle">@Only.CRM</span>
+      </a>
+
+        
+      <a href="https://twitter.com/Only_CRM/" class="social-card glass-panel anim-fade-up anim-delay-1" target="_blank" rel="noopener">
+        <div class="social-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          </svg>
+        </div>
+        <span class="social-name">Twitter / X</span>
+        <span class="social-handle">@Only_CRM</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer" style="display: flex; justify-content: center; align-items: center; height: 60px;">
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-copy" style="margin: 0; text-align: center;">
+        © 2026 OnlyCRM. <span data-i18n="footer_rights">Все права защищены.</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+<div class="payment-modal" id="paymentSuccessModal">
+  <div class="payment-modal-backdrop"></div>
+  <div class="payment-modal-content glass-panel">
+    <div class="payment-modal-icon success">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    </div>
+    <h3 data-i18n="payment_success_title">Оплата прошла успешно!</h3>
+    <p data-i18n="payment_success_desc">Ваш доступ активирован. Добро пожаловать в OnlyCRM!</p>
+    <button class="btn-primary" onclick="closePaymentModal('success')" data-i18n="payment_continue">Продолжить</button>
+  </div>
+</div>
+
+<div class="payment-modal" id="paymentFailModal">
+  <div class="payment-modal-backdrop"></div>
+  <div class="payment-modal-content glass-panel">
+    <div class="payment-modal-icon fail">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+    </div>
+    <h3 data-i18n="payment_fail_title">Оплата не удалась</h3>
+    <p data-i18n="payment_fail_desc">Произошла ошибка при обработке платежа. Попробуйте ещё раз.</p>
+    <button class="btn-primary" onclick="closePaymentModal('fail')" data-i18n="payment_retry">Попробовать снова</button>
+  </div>
+</div>
+
+<script src="./themes.js"></script>
+<script src="./i18n.js"></script>
+<script src="./animations.js"></script>
+<script src="./manual.js"></script>
+<script src="./pricing.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
