@@ -43,7 +43,7 @@
     <div class="legal-brand">
       <img id="theme-logo" src="../photo2.png" alt="OnlyCRM">
       <div class="legal-brand-name">Only<span>CRM</span></div>
-      <div class="legal-brand-tagline">Telegram CRM платформа</div>
+      <div class="legal-brand-tagline" data-i18n="legal_tagline">Telegram CRM платформа</div>
     </div>
   </div>
 
@@ -111,15 +111,209 @@
 
   <footer class="legal-footer">
     <nav class="legal-footer-links">
-      <a href="../terms-of-service/index.html" class="active">Terms of Service</a>
-      <a href="../privacy-policy/index.html">Privacy Policy</a>
-      <a href="../cookie-policy/index.html">Cookie Policy</a>
-      <a href="../payment-refunds/index.html">Payment &amp; Refunds</a>
+      <a href="../terms-of-service/index.html" class="active" data-i18n="footer_terms">Terms of Service</a>
+      <a href="../privacy-policy/index.html" data-i18n="footer_privacy">Privacy Policy</a>
+      <a href="../cookie-policy/index.html" data-i18n="footer_cookie">Cookie Policy</a>
+      <a href="../payment-refunds/index.html" data-i18n="footer_payment">Payment &amp; Refunds</a>
     </nav>
   </footer>
 
   <script src="../themes.js"></script>
   <script src="../i18n.js"></script>
+  <script>
+    window.legalTranslations = {
+      en: {
+        title: "Terms of Service — OnlyCRM",
+        description: "OnlyCRM Terms of Service — terms governing access and use of the OnlyCRM platform.",
+        html: `
+          <h1>Terms of Service</h1>
+          <p class="legal-updated">Last updated: March 15, 2026</p>
+
+          <h2>1. General Provisions</h2>
+          <p>These Terms of Service (hereinafter - "Terms") govern the access and use of the OnlyCRM platform (hereinafter - "Service", "Platform"), available at onlycrm.tech. By registering and using the Service, you confirm that you have read, understood, and fully accepted these Terms.</p>
+          <p>OnlyCRM is an aggregator platform designed to systematize and improve messaging management in Telegram for business purposes. The Service provides tools for dialog management, analytics, message templates, and team collaboration.</p>
+
+          <h2>2. Service Description</h2>
+          <p>OnlyCRM is a technical intermediary (aggregator) that systematizes and adapts Telegram messaging for business processes. We are NOT the sender or recipient of messages. The Service does not control, moderate, or bear responsibility for the content of messages transmitted through the platform.</p>
+          <p>The user independently determines the purposes and content of communications carried out through the Service.</p>
+
+          <h2>3. Limitation of Liability</h2>
+          <p>OnlyCRM is not liable for:</p>
+          <ul>
+            <li>Content of messages sent or received by users through the platform</li>
+            <li>User actions when using the Service</li>
+            <li>Losses resulting from the use or inability to use the Service</li>
+            <li>Failures in third-party services (including Telegram)</li>
+            <li>Temporary unavailability of the Service for technical reasons</li>
+          </ul>
+          <p>The Service is provided on an "as is" basis without any warranties, express or implied.</p>
+
+          <h2>4. Acceptable Use</h2>
+          <p>It is prohibited to use the Service for:</p>
+          <ul>
+            <li>Fraud, scam, or any illegal activities</li>
+            <li>Sending spam or unsolicited messages</li>
+            <li>Violating Telegram's terms of service</li>
+            <li>Violating applicable legislation</li>
+            <li>Collecting personal data without consent</li>
+          </ul>
+          <p>If violations are detected, the user's account may be blocked without prior notice and without refund. OnlyCRM reserves the right to cooperate with law enforcement agencies in case of illegal activities.</p>
+
+          <h2>5. Intellectual Property</h2>
+          <p>All rights to the OnlyCRM platform, including source code, design, algorithms, databases, and documentation, belong to the Service owners. The following is prohibited:</p>
+          <ul>
+            <li>Copying, modifying, or distributing any parts of the Service</li>
+            <li>Reverse engineering</li>
+            <li>Creating derivative products based on the Service</li>
+            <li>Using trademarks or logos without written permission</li>
+          </ul>
+
+          <h2>6. Registration and Account</h2>
+          <p>The user is required to provide accurate information during registration. The user is responsible for maintaining the security of account credentials (login, password). The user must immediately notify the administration of any unauthorized access to the account.</p>
+          <p>Each user may have only one account. Creating multiple accounts to bypass restrictions is prohibited.</p>
+
+          <h2>7. Financial Terms</h2>
+          <p>Detailed payment, subscription, and refund terms are described in the Payment and Refund Policy. By using the Service, you agree to the financial terms outlined in that document.</p>
+
+          <h2>8. Termination</h2>
+          <p>We reserve the right to block or delete a user's account if these Terms are violated. The user may stop using the Service at any time; however, this does not entail an automatic refund.</p>
+
+          <h2>9. Changes to Terms</h2>
+          <p>OnlyCRM reserves the right to modify these Terms. Users will be notified of significant changes through the Service or by email. Continued use of the Service after changes take effect constitutes acceptance of the updated Terms.</p>
+
+          <h2>10. Contact Information</h2>
+          <p>For all questions related to these Terms, please contact us through the built-in support in the Service.</p>
+        `
+      },
+      ru: {
+        title: "Условия использования — OnlyCRM",
+        description: "Условия использования OnlyCRM — правила доступа и использования платформы OnlyCRM.",
+        html: `
+          <h1>Условия использования</h1>
+          <p class="legal-updated">Последнее обновление: 15 марта 2026</p>
+
+          <h2>1. Общие положения</h2>
+          <p>Настоящие Условия использования (далее - «Условия») регулируют доступ и использование платформы OnlyCRM (далее - «Сервис», «Платформа»), доступной по адресу onlycrm.tech. Регистрируясь и используя Сервис, вы подтверждаете, что ознакомились с настоящими Условиями, понимаете и принимаете их в полном объёме.</p>
+          <p>OnlyCRM - это платформа-агрегатор, предназначенная для систематизации и улучшения работы с сообщениями в Telegram для бизнес-целей. Сервис предоставляет инструменты управления диалогами, аналитики, шаблонов сообщений и командной работы.</p>
+
+          <h2>2. Описание сервиса</h2>
+          <p>OnlyCRM является техническим посредником (агрегатором), который систематизирует и адаптирует обмен сообщениями в Telegram под бизнес-процессы. Мы НЕ являемся отправителем или получателем сообщений. Сервис не контролирует, не модерирует и не несёт ответственности за содержание сообщений, передаваемых через платформу.</p>
+          <p>Пользователь самостоятельно определяет цели и содержание коммуникаций, осуществляемых с помощью Сервиса.</p>
+
+          <h2>3. Ограничение ответственности</h2>
+          <p>OnlyCRM не несёт ответственности за:</p>
+          <ul>
+            <li>Содержание сообщений, отправленных или полученных пользователями через платформу</li>
+            <li>Действия пользователей при использовании Сервиса</li>
+            <li>Убытки, возникшие в результате использования или невозможности использования Сервиса</li>
+            <li>Сбои в работе сторонних сервисов (включая Telegram)</li>
+            <li>Временную недоступность Сервиса по техническим причинам</li>
+          </ul>
+          <p>Сервис предоставляется на условиях «как есть» (as is) без каких-либо гарантий, явных или подразумеваемых.</p>
+
+          <h2>4. Допустимое использование</h2>
+          <p>Запрещается использовать Сервис для:</p>
+          <ul>
+            <li>Мошенничества, скама или любых незаконных действий</li>
+            <li>Рассылки спама или нежелательных сообщений</li>
+            <li>Нарушения условий использования Telegram</li>
+            <li>Нарушения применимого законодательства</li>
+            <li>Сбора персональных данных без согласия субъектов</li>
+          </ul>
+          <p>При обнаружении нарушений аккаунт пользователя может быть заблокирован без предварительного уведомления и без возврата средств. OnlyCRM оставляет за собой право сотрудничать с правоохранительными органами в случае выявления противоправной деятельности.</p>
+
+          <h2>5. Интеллектуальная собственность</h2>
+          <p>Все права на платформу OnlyCRM, включая исходный код, дизайн, алгоритмы, базы данных и документацию, принадлежат владельцам Сервиса. Запрещено:</p>
+          <ul>
+            <li>Копирование, модификация или распространение любых частей Сервиса</li>
+            <li>Обратная разработка (реверс-инжиниринг)</li>
+            <li>Создание производных продуктов на основе Сервиса</li>
+            <li>Использование торговых марок или логотипов без письменного разрешения</li>
+          </ul>
+
+          <h2>6. Регистрация и аккаунт</h2>
+          <p>Пользователь обязан предоставить достоверные данные при регистрации. Ответственность за сохранность учётных данных (логин, пароль) лежит на пользователе. Пользователь обязан незамедлительно уведомить администрацию о несанкционированном доступе к аккаунту.</p>
+          <p>Один пользователь может иметь только один аккаунт. Создание множественных аккаунтов для обхода ограничений запрещено.</p>
+
+          <h2>7. Финансовые условия</h2>
+          <p>Подробные условия оплаты, подписок и возвратов описаны в Политике оплаты и возврата. Используя Сервис, вы соглашаетесь с финансовыми условиями, изложенными в данном документе.</p>
+
+          <h2>8. Прекращение использования</h2>
+          <p>Мы вправе заблокировать или удалить аккаунт пользователя при нарушении настоящих Условий. Пользователь может прекратить использование Сервиса в любое время, однако это не влечёт автоматического возврата средств.</p>
+
+          <h2>9. Изменение условий</h2>
+          <p>OnlyCRM оставляет за собой право изменять настоящие Условия. О существенных изменениях пользователи будут уведомлены через Сервис или по электронной почте. Продолжение использования Сервиса после вступления изменений в силу означает согласие с обновлёнными Условиями.</p>
+
+          <h2>10. Контактная информация</h2>
+          <p>По всем вопросам, связанным с настоящими Условиями, обращайтесь через встроенную поддержку в Сервисе.</p>
+        `
+      },
+      ua: {
+        title: "Умови використання — OnlyCRM",
+        description: "Умови використання OnlyCRM — правила доступу та використання платформи OnlyCRM.",
+        html: `
+          <h1>Умови використання</h1>
+          <p class="legal-updated">Останнє оновлення: 15 березня 2026</p>
+
+          <h2>1. Загальні положення</h2>
+          <p>Ці Умови використання (далі - «Умови») регулюють доступ та використання платформи OnlyCRM (далі - «Сервіс», «Платформа»), доступної за адресою onlycrm.tech. Реєструючись та використовуючи Сервіс, ви підтверджуєте, що ознайомились з цими Умовами, розумієте та приймаєте їх у повному обсязі.</p>
+          <p>OnlyCRM - це платформа-агрегатор, призначена для систематизації та покращення роботи з повідомленнями в Telegram для бізнес-цілей. Сервіс надає інструменти управління діалогами, аналітики, шаблонів повідомлень та командної роботи.</p>
+
+          <h2>2. Опис сервісу</h2>
+          <p>OnlyCRM є технічним посередником (агрегатором), який систематизує та адаптує обмін повідомленнями в Telegram під бізнес-процеси. Ми НЕ є відправником або отримувачем повідомлень. Сервіс не контролює, не модерує та не несе відповідальності за зміст повідомлень, що передаються через платформу.</p>
+          <p>Користувач самостійно визначає цілі та зміст комунікацій, що здійснюються за допомогою Сервісу.</p>
+
+          <h2>3. Обмеження відповідальності</h2>
+          <p>OnlyCRM не несе відповідальності за:</p>
+          <ul>
+            <li>Зміст повідомлень, відправлених або отриманих користувачами через платформу</li>
+            <li>Дії користувачів при використанні Сервісу</li>
+            <li>Збитки, що виникли в результаті використання або неможливості використання Сервісу</li>
+            <li>Збої в роботі сторонніх сервісів (включаючи Telegram)</li>
+            <li>Тимчасову недоступність Сервісу з технічних причин</li>
+          </ul>
+          <p>Сервіс надається на умовах «як є» (as is) без будь-яких гарантій, явних або таких, що маються на увазі.</p>
+
+          <h2>4. Допустиме використання</h2>
+          <p>Забороняється використовувати Сервіс для:</p>
+          <ul>
+            <li>Шахрайства, скаму або будь-яких незаконних дій</li>
+            <li>Розсилки спаму або небажаних повідомлень</li>
+            <li>Порушення умов використання Telegram</li>
+            <li>Порушення чинного законодавства</li>
+            <li>Збору персональних даних без згоди суб'єктів</li>
+          </ul>
+          <p>При виявленні порушень акаунт користувача може бути заблоковано без попереднього повідомлення та без повернення коштів. OnlyCRM залишає за собою право співпрацювати з правоохоронними органами у випадку виявлення протиправної діяльності.</p>
+
+          <h2>5. Інтелектуальна власність</h2>
+          <p>Усі права на платформу OnlyCRM, включаючи вихідний код, дизайн, алгоритми, бази даних та документацію, належать власникам Сервісу. Заборонено:</p>
+          <ul>
+            <li>Копіювання, модифікація або розповсюдження будь-яких частин Сервісу</li>
+            <li>Зворотна розробка (реверс-інжиніринг)</li>
+            <li>Створення похідних продуктів на основі Сервісу</li>
+            <li>Використання торговельних марок або логотипів без письмового дозволу</li>
+          </ul>
+
+          <h2>6. Реєстрація та акаунт</h2>
+          <p>Користувач зобов'язаний надати достовірні дані при реєстрації. Відповідальність за збереження облікових даних (логін, пароль) лежить на користувачеві. Користувач зобов'язаний негайно повідомити адміністрацію про несанкціонований доступ до акаунту.</p>
+          <p>Один користувач може мати лише один акаунт. Створення множинних акаунтів для обходу обмежень заборонено.</p>
+
+          <h2>7. Фінансові умови</h2>
+          <p>Детальні умови оплати, підписок та повернень описані в Політиці оплати та повернення. Використовуючи Сервіс, ви погоджуєтесь з фінансовими умовами, викладеними в цьому документі.</p>
+
+          <h2>8. Припинення використання</h2>
+          <p>Ми маємо право заблокувати або видалити акаунт користувача при порушенні цих Умов. Користувач може припинити використання Сервісу в будь-який час, проте це не тягне за собою автоматичного повернення коштів.</p>
+
+          <h2>9. Зміна умов</h2>
+          <p>OnlyCRM залишає за собою право змінювати ці Умови. Про суттєві зміни користувачі будуть повідомлені через Сервіс або електронною поштою. Продовження використання Сервісу після набуття змінами чинності означає згоду з оновленими Умовами.</p>
+
+          <h2>10. Контактна інформація</h2>
+          <p>З усіх питань, пов'язаних з цими Умовами, звертайтесь через вбудовану підтримку в Сервісі.</p>
+        `
+      }
+    };
+  </script>
+  <script src="../legal-i18n.js"></script>
 
 </body>
 </html>
