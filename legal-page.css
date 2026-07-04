@@ -1,0 +1,220 @@
+/* ═══════════════════════════════════════════════
+   OnlyCRM — Legal Pages (Terms / Privacy / Cookie / Payment)
+   ═══════════════════════════════════════════════ */
+
+.legal-page-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 20px 0;
+}
+
+.legal-top {
+  max-width: 780px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.legal-back-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.legal-back-btn:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.legal-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 4px;
+}
+
+.legal-brand img {
+  height: 44px;
+  width: auto;
+  margin-bottom: 14px;
+}
+
+.legal-brand-name {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.legal-brand-name span {
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.legal-brand-tagline {
+  margin-top: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Top-right controls: language switcher + theme selector */
+.legal-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legal-controls .lang-switcher {
+  display: flex;
+}
+
+.legal-content-wrap {
+  max-width: 780px;
+  margin: 32px auto 0;
+  width: 100%;
+  flex: 1;
+}
+
+.legal-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 44px 48px;
+}
+
+.legal-card h1 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.legal-updated {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.legal-card h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 34px;
+  margin-bottom: 14px;
+}
+
+.legal-card p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+.legal-card ul {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+}
+
+.legal-card ul li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.legal-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 2px;
+  color: var(--accent-light);
+}
+
+.legal-footer {
+  margin-top: 40px;
+  padding: 28px 20px 32px;
+}
+
+.legal-footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.legal-footer-links a {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legal-footer-links a:hover {
+  color: var(--accent-light);
+}
+
+.legal-footer-links a.active {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 600px) {
+  .legal-card {
+    padding: 32px 24px;
+  }
+  .legal-footer-links {
+    gap: 14px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .legal-top {
+    padding-top: 52px;
+  }
+
+  .legal-back-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .legal-controls {
+    top: 12px;
+    right: 12px;
+    gap: 6px;
+  }
+
+  .legal-controls .lang-btn {
+    padding: 4px 6px;
+    font-size: 0.68rem;
+  }
+
+  .legal-brand-name {
+    font-size: 1.4rem;
+  }
+}

@@ -597,6 +597,67 @@ position: relative;
   margin-bottom: 16px;
 }
 
+.who-icon-img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 18px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  box-shadow: 0 10px 30px var(--accent-glow);
+  padding: 4px;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+}
+
+.who-icon-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.who-card:hover .who-icon-img {
+  transform: scale(1.08) rotate(-4deg);
+  box-shadow: 0 14px 38px var(--accent-glow);
+}
+
+.who-icon-badge {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  box-shadow: 0 10px 30px var(--accent-glow);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+}
+
+.who-icon-badge svg {
+  width: 36px;
+  height: 36px;
+  stroke: #fff;
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.who-card:hover .who-icon-badge {
+  transform: scale(1.08) rotate(-4deg);
+  box-shadow: 0 14px 38px var(--accent-glow);
+}
+
+.variant-label {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 50px 0 18px;
+  color: var(--accent-light);
+}
+
 .who-card-title {
   font-size: 1.1rem;
   font-weight: 700;
@@ -881,10 +942,39 @@ position: relative;
 
 .footer-inner {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 10px;
+}
+
+.footer-legal-links-secondary {
+  margin-top: 10px;
+}
+
+.footer-legal-links a {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.footer-legal-links a:hover {
+  color: var(--accent-light);
+}
+
+.footer-dot {
+  color: var(--text-muted);
+  opacity: 0.5;
+  font-size: 0.6rem;
 }
 
 .footer-brand {

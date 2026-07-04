@@ -13,7 +13,10 @@
   function updateLogo() {
     if (!logo) return;
 
-    const nextSrc = html.getAttribute('data-theme') === 'dark' ? 'photo2.png' : 'photo1.png';
+    const currentSrc = logo.getAttribute('src');
+    const dir = currentSrc.includes('/') ? currentSrc.substring(0, currentSrc.lastIndexOf('/') + 1) : '';
+    const nextFile = html.getAttribute('data-theme') === 'dark' ? 'photo2.png' : 'photo1.png';
+    const nextSrc = dir + nextFile;
 
     // Если уже нужный src, ничего не делаем
     if (logo.src.endsWith(nextSrc)) return;

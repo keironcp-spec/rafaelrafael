@@ -4,14 +4,14 @@
 
 /* ─── Dark Theme (Default) ─── */
 [data-theme="dark"] {
-  --bg: #0a0a0f;
-  --bg-system: #111118;
+  --bg: #0c0713;
+  --bg-system: #130b1c;
   --text: #ffffff;
-  --text-secondary: #a0a0b8;
-  --text-muted: #6b6b80;
-  --glass-bg: rgba(17, 17, 24, 0.8);
+  --text-secondary: #a18fb7;
+  --text-muted: #6f6a78;
+  --glass-bg: rgba(24, 16, 36, 0.82);
   --glass-border: rgba(255, 255, 255, 0.06);
-  --card-bg: #111118;
+  --card-bg: #150f20;
 }
 
 /* ─── Light Theme ─── */
