@@ -942,10 +942,39 @@ position: relative;
 
 .footer-inner {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 10px;
+}
+
+.footer-legal-links-secondary {
+  margin-top: 10px;
+}
+
+.footer-legal-links a {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.footer-legal-links a:hover {
+  color: var(--accent-light);
+}
+
+.footer-dot {
+  color: var(--text-muted);
+  opacity: 0.5;
+  font-size: 0.6rem;
 }
 
 .footer-brand {
