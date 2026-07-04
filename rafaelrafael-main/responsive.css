@@ -1,0 +1,160 @@
+/* ═══════════════════════════════════════════════
+   OnlyCRM — Responsive Styles
+   ═══════════════════════════════════════════════ */
+
+/* ─── Tablet (640px+) ─── */
+@media (min-width: 640px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .section-title {
+    font-size: 2.25rem;
+  }
+
+  .why-item {
+    flex-direction: row;
+  }
+
+  .why-item.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .tasks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ─── Desktop (768px+) ─── */
+@media (min-width: 768px) {
+  .nav-desktop {
+    display: flex;
+  }
+
+  .lang-switcher {
+    display: flex;
+  }
+
+  .color-picker {
+    display: flex;
+  }
+
+  .btn-try-free {
+    display: inline-flex;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .hero {
+    padding: 160px 0 100px;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .section {
+    padding: 100px 0;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .who-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .social-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ─── Large Desktop (1024px+) ─── */
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .who-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tasks-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ─── Small Mobile (max 480px) ─── */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-lg {
+    padding: 14px 24px;
+    font-size: 0.9rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .features-grid,
+  .tasks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .payment-modal-content {
+    padding: 32px 24px;
+  }
+}
+
+/* ─── Manual Section Responsive ─── */
+@media (min-width: 640px) {
+  .manual-tab-list {
+    flex-direction: row;
+  }
+
+  .manual-tab-btn.active::before {
+    left: 50%;
+    top: auto;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 3px;
+  }
+}
